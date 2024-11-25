@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mahasiswa</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Data Mahasiswa</h1>
+    <table id="mahasiswaTable">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>NIM</th>
+          <th>Nama</th>
+          <th>Jenis Kelamin</th>
+          <th>Aksi</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Data will be appended here -->
+      </tbody>
+    </table>
+
+    <h2>Tambah Mahasiswa</h2>
+    <form id="mahasiswaForm">
+      <input type="text" id="nim" placeholder="NIM" required>
+      <input type="text" id="nama" placeholder="Nama" required>
+      <select id="jenis_kelamin">
+        <option value="Laki-Laki">Laki-Laki</option>
+        <option value="Perempuan">Perempuan</option>
+      </select>
+      <button type="submit">Tambah</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
